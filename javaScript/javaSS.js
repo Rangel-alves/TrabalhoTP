@@ -1,8 +1,11 @@
 loadDataFromLocalStorage();
-
 function ConsultaHospede() {
     var consultaHsp = consultaHospedes();
 }
+function consultaHospedes() {
+    window.open("ConsultarHospedes.html", "_self");
+}
+
 
 
 function ConsultaFunc() {
