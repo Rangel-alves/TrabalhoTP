@@ -1,20 +1,18 @@
 loadDataFromLocalStorage();
+
 function ConsultaHospede() {
     var consultaHsp = consultaHospedes();
 }
 function consultaHospedes() {
     window.open("ConsultarHospedes.html", "_self");
+    clearTableH();
+    populateTableH();
+    
 }
-
-
-
 function ConsultaFunc() {
     var consultaHsp = consultaFuncionario();
 }
 
-clearTableH();
-populateTableH();
-saveLocaStorage();
 
 function clearTableH(){
     var Table = document.getElementById('hospedes_table');
@@ -61,6 +59,6 @@ function loadDataFromLocalStorage() { // função sera chamada toda vez que carr
     var hospedesSaved = localStorage.getItem("hospedes");
     if (hospedesSaved) { // testando se tem algo
         hospedes = JSON.parse(hospedesSaved);
-        populateTable();
+        populateTableH();
     }
 }

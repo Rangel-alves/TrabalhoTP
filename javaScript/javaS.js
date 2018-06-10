@@ -78,16 +78,12 @@ function SalvarH() {
         quarto: inputQuart.value
     };
     hospedes.push(hospede);
-   
-    alert('botao funcionando');
-}
+     saveLocaStorage();
+      }
 function validateField(input) {
     return input.value.trim() != "";
 }
 
-function consultaHospedes() {
-    window.open("ConsultarHospedes.html", "_self");
-}
 function cadastarFuncionario() {
     window.open("cadastroFuncionario.html", "_self");
 }
@@ -109,6 +105,8 @@ function saveLocaStorage() {
     var data = JSON.stringify(hospedes); //transforma array em string
     localStorage.setItem("hospedes", data);
 }
+
+
 
 
 
