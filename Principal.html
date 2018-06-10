@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Principal</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
-<body>
-     <label >  Cadastrar Hospede</label> <input type="button" value=" Clique Aqui "id="btnCad" onclick="Cadastros();"/> <br>
-     <label>Consultar Hospede</label> <input type="button" value="  Clique Aqui  " id="btnConsultH" onclick="ConsultaHospede();" /> <br>
-     <label >Cadastrar Funcionario</label> <input type="button" value="  Clique Aqui  " id="btnCadFunc"  onclick="CadastrosFunc();"/><br>
-     <label >Consultar Funcionario</label><input type="button" value="   Clique Aqui " id="btnConsFunc" onclick="ConsultaFunc();"/>
+<body id="Principal">  
+    <p class="botao">
+            <input type="button" value="  Cadastrar Hospede      "id="btnCad" onclick="Cadastros();" style="width: 150px; height: 50px"/> <br>
+            <input type="button" value="  Consultar Hospede      " id="btnConsultH" onclick="ConsultaHospede();" style="width: 150px; height: 50px"/> <br>
+            <input type="button" value="  Cadastrar Funcionario  " id="btnCadFunc"  onclick="CadastrosFunc();"style="width: 150px; height: 50px"/><br>
+            <input type="button" value="  Consultar Funcionario  " id="btnConsFunc" onclick="ConsultaFunc();"style="width: 150px; height: 50px"/>
+    </p> 
     
     <script src="javaScript/JavaS.js"></script>
-    </body>
+</body>
 </html>

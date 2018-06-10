@@ -1,80 +1,80 @@
 var hospedes = [];
 Login();
-
+loadDataFromLocalStorage();
 
 function Login() {
     var button = document.getElementById('btnLog');
-        button.onclick = function() {
+    button.onclick = function () {
         LoginValidate();
-        loadDataFromLocalStorage();
-     
-     };
-     
-    }
+       
 
-    function Cadastros(){
-          var cadastro = cadastarHospede();
-        }
+    };
 
-    function ConsultaHospede(){
-        var consultaHsp = consultaHospedes();
-    }
+}
 
-    function CadastrosFunc(){
-        var cadastro = cadastarFuncionario();
-      }
+function Cadastros() {
+    var cadastro = cadastarHospede();
+}
 
-  function ConsultaFunc(){
-      var consultaHsp = consultaFuncionario();
-  }
+function ConsultaHospede() {
+    var consultaHsp = consultaHospedes();
+}
 
+function CadastrosFunc() {
+    var cadastro = cadastarFuncionario();
+}
 
+function ConsultaFunc() {
+    var consultaHsp = consultaFuncionario();
+}
 
 
-       function back(){
-            var voltar = Voltar();
-    }
-    function Saveh(){
-               SalvarH();
-        
-         }
 
 
-   function LoginValidate(){
-   var name = "admin";
-   var password = "admin";
-   var inputName = document.getElementById('name');
+function back() {
+    var voltar = Voltar();
+}
+function Saveh() {
+    SalvarH();
+
+}
+
+
+function LoginValidate() {
+    var name = "admin";
+    var password = "admin";
+    var inputName = document.getElementById('name');
     var inputPassword = document.getElementById('password');
-  
-       if(inputName.value == name && inputPassword.value == password){
+
+    if (inputName.value == name && inputPassword.value == password) {
         window.open("Principal.html", "_self");
-    }else{
+    } else {
         alert("usuario ou senha invalido");
     }
-   }
-function isValidField(field){
+}
+function isValidField(field) {
     return field.value.trim() != '';
 }
 
 
 
-function cadastarHospede(){
+function cadastarHospede() {
     window.open("cadastroHospede.html", "_self");
 }
 
-function Voltar(){
+function Voltar() {
     window.open("Principal.html", "_self");
 }
 
-function SalvarH(){
+function SalvarH() {
 
-    
+
     var inputName = document.getElementById('nameH');
     var inputCPF = document.getElementById('cpfH');
     var inputEmail = document.getElementById('emailH');
     var inputPhone = document.getElementById('telH');
     var inputQuart = document.getElementById('quartoH');
-   
+
     var hospede = {
         name: inputName.value,
         cpf: inputCPF.value,
@@ -92,13 +92,13 @@ function validateField(input) {
     return input.value.trim() != "";
 }
 
-function consultaHospedes(){
+function consultaHospedes() {
     window.open("ConsultarHospedes.html", "_self");
 }
-function cadastarFuncionario(){
+function cadastarFuncionario() {
     window.open("cadastroFuncionario.html", "_self");
 }
-function consultaFuncionario(){
+function consultaFuncionario() {
     window.open("ConsultarFuncionario.html", "_self");
 }
 
@@ -120,12 +120,11 @@ function clearFields(inputName, inputCPF, inputEmail, inputQuart) {
     }
 }
 */
-function populateTableH(){
+function populateTableH() {
     var table = document.getElementById('hospedes_table')
-    console.log(table);
-    
 
-    for(var i = 0; i < hospedes.length; i++){
+
+    for (var i = 0; i < hospedes.length; i++) {
         var hospede = hospedes[i];
         var tr = document.createElement('tr');
         var tdName = document.createElement('td');
@@ -135,11 +134,11 @@ function populateTableH(){
         var tdQuarto = document.createElement('td');
 
         tdName.innerHTML = hospede.name;
-        tdCpf.innerHTML= hospede.cpf;
+        tdCpf.innerHTML = hospede.cpf;
         tdEmail.innerHTML = hospede.email;
         tdPhone.innerHTML = hospede.phone;
         tdQuarto.innerHTML = hospede.quarto;
-        
+
 
         tr.appendChild(tdName);
         tr.appendChild(tdCpf)
@@ -152,15 +151,15 @@ function populateTableH(){
     }
 }
 
-function saveLocaStorage(){
+function saveLocaStorage() {
     var data = JSON.stringify(hospedes); //transforma array em string
-    localStorage.setItem("hospedes",data);
+    localStorage.setItem("hospedes", data);
 }
 
-function loadDataFromLocalStorage(){ // função sera chamada toda vez que carregar a pagina
+function loadDataFromLocalStorage() { // função sera chamada toda vez que carregar a pagina
     var hospedesSaved = localStorage.getItem("hospedes");
-    if(hospedesSaved){ // testando se tem algo
-        hospedes =JSON.parse(hospedesSaved);
+    if (hospedesSaved) { // testando se tem algo
+        hospedes = JSON.parse(hospedesSaved);
         populateTable();
     }
 }
