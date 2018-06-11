@@ -81,9 +81,9 @@ function SalvarH() {
         tel: inputPhone.value,
         quarto: inputQuart.value
     };
-    hospedes.push(hospede);
+       hospedes.push(hospede);
      saveLocaStorageH();
-     //clearFields();
+     clearFields();
       }
 function validateField(input) {
     return input.value.trim() != "";

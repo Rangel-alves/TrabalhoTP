@@ -1,7 +1,7 @@
 loadDataFromLocalStorageH();
 loadDataFromLocalStorageF();
 function ConsultaHospede() {
-    var consultaHsp = consultaHospedes();
+var consultaHsp = consultaHospedes();
 }
 function consultaHospedes() {
     window.open("ConsultarHospedes.html", "_self");
@@ -35,7 +35,7 @@ function populateTableH() {
         tdName.innerHTML = hospede.name;
         tdCpf.innerHTML = hospede.cpf;
         tdEmail.innerHTML = hospede.email;
-        tdPhone.innerHTML = hospede.phone;
+        tdPhone.innerHTML = hospede.tel;
         tdQuarto.innerHTML = hospede.quarto;
 
 
