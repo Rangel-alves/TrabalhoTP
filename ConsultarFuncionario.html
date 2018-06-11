@@ -1,16 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome = 1">
     <title>Consulta Hospedes</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
-<body>
 
+<body id="consultaF">
 
-<input type="button" value="Voltar" id="btnVoltarCad" onclick="back();"/>
+    <h1 id="consultaFtitulo">
+        Consultar Funcionario
+    </h1>
+    <table id="func_table">
 
-        <script src="javaScript/JavaS.js"></script>
+        <thead>
+            <tr>
+                <th>
+                    nome
+                </th>
+                <th>
+                    cpf
+                </th>
+                <th>
+                    email
+                </th>
+                <th>
+                    Telefone
+                </th>
+                <th>
+                    Pis
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+        </tbody>
+
+    </table>
+    <input type="button" value="Voltar" id="btnVoltarCad" onclick="back();" style="width: 150px; height: 50px" />
+
+    <script src="javaScript/JavaS.js"></script>
+    <script src="javaScript/JavaFunc.js"></script>
 </body>
+
 </html>

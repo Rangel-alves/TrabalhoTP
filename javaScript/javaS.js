@@ -1,4 +1,5 @@
 var hospedes = [];
+var funcionarios= [];
 Login();
 
 
@@ -32,6 +33,9 @@ function back() {
 function Saveh() {
     SalvarH();
 
+}
+function SaveF(){
+    SalvarF();
 }
 
 
@@ -78,7 +82,8 @@ function SalvarH() {
         quarto: inputQuart.value
     };
     hospedes.push(hospede);
-     saveLocaStorage();
+     saveLocaStorageH();
+     //clearFields();
       }
 function validateField(input) {
     return input.value.trim() != "";
@@ -87,26 +92,46 @@ function validateField(input) {
 function cadastarFuncionario() {
     window.open("cadastroFuncionario.html", "_self");
 }
-function consultaFuncionario() {
-    window.open("ConsultarFuncionario.html", "_self");
-}
 
-function clearFields(inputName, inputCPF, inputEmail, inputQuart) {
+
+function clearFields(inputName, inputCPF, inputEmail,inputPhone, inputQuart) {
     inputName.value = "";
     inputCPF.value = "";
     inputEmail.value = "";
+    inputPhone.value = "";
     inputQuart.value = "";
     inputName.focus();
 }
 
 
 
-function saveLocaStorage() {
+function saveLocaStorageH() {
     var data = JSON.stringify(hospedes); //transforma array em string
     localStorage.setItem("hospedes", data);
 }
 
 
+function   SalvarF(){
+    var inputName = document.getElementById('nameF');
+    var inputCPF = document.getElementById('cpfF');
+    var inputEmail = document.getElementById('emailF');
+    var inputPhone = document.getElementById('telF');
+    var inputPis = document.getElementById('pisF');
 
+    var funcionario = {
+        name: inputName.value,
+        cpf: inputCPF.value,
+        email: inputEmail.value,
+        tel: inputPhone.value,
+        pis: inputPis.value
+    };
+    funcionarios.push(funcionario);
+     saveLocaStorageF();
+           }
 
+           function saveLocaStorageF() {
+            var dataF = JSON.stringify(funcionarios); //transforma array em string
+            localStorage.setItem("funcionarios", dataF);
+        }
+        
 

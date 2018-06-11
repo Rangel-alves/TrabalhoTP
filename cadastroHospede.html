@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,32 +9,36 @@
     <link rel="stylesheet" href="estilo.css">
 
 </head>
-<body>
+
+<body id="cadastroH">
     <h1 id="CadastroTitulo">
         Cadastro de Hospedes
     </h1>
-<form id="cadastro">
+    <form>
 
-        Nome: <input type="text" id="nameH" /><br>
-        CPF: <input type="text" id="cpfH" /><br>
-        E-mail: <input type="email" id="emailH" /><br>
-        Telefone: <input type="text" id="telH"><br>
-        Quarto: <input type="text" name="Quarto" id="quartoH"><br>
+        Nome:
+        <input type="text" id="nameH" style="width:300px" />
+        <br> CPF:
+        <input type="number" id="cpfH" style="width:300px" />
+        <br> E-mail:
+        <input type="email" id="emailH" style="width:300px" />
+        <br> Telefone:
+        <input type="number" id="telH" style="width:300px">
+        <br> Quarto:
+        <input type="number" id="quartoH" style="width:300px">
+        <br>
 
-</form>
-<div >
-        <input type="button" value="Salvar" id="salvarh" onclick="Saveh();" />
-        <input type="button" value="Voltar" id="btnVoltarCad" onclick="back();"/>
+        <input type="button" value="Salvar" id="salvarh" onclick="Saveh();" style="width: 150px; height: 25px" />
+        <input type="button" value="Voltar" id="btnVoltarCad" onclick="back();" style="width: 150px; height: 25px" />
 
-</div>
-     
+    </form>
+    <div>
+
+
+    </div>
+
 
     <script src="javaScript/JavaS.js"></script>
 </body>
+
 </html>
-
-
-
-
-
-

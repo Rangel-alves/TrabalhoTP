@@ -66,3 +66,175 @@ margin:0px;
 padding:0px;
 width: 50px;
 }
+
+#menu{
+    font-size: 35px;
+    font-weight: bolder;
+    font-family: 'Arial-Black';
+    font-style: oblique;
+    color:darkred;
+    text-align: center;
+    top: 40%; /* posiciona na metade da tela */
+    margin-top: -100px; /* e retrocede metade da altura */
+
+}
+
+
+
+#cadastroH{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align:center;
+    color: black;
+    font-weight: bolder;
+    position:absolute ;
+    top: 50%; /* posiciona na metade da tela */
+    margin-top: -100px; /* e retrocede metade da altura */
+    padding: 10px;
+    padding: 2px 4px 6px 8px;
+    background-image: url(images/cadH.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: center;
+    background-color: antiquewhite;
+
+}
+#CadastroTitulo{
+    font-size: 35px;
+    font-weight: bolder;
+    font-family: 'Arial-Black';
+    font-style: oblique;
+    color:darkred;
+    text-align: center;
+    top: 40%; /* posiciona na metade da tela */
+    margin-top: -100px; /* e retrocede metade da altura */
+}
+
+#ConsultaH{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align:center;
+    color: black;
+    font-weight: bolder;
+    position:absolute ;
+    top: 40%; /* posiciona na metade da tela */
+    margin-top: -100px; /* e retrocede metade da altura */
+    padding: 10px;
+    padding: 2px 4px 6px 8px;
+    background-image: url(images/cadH.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: center;
+    background-color: antiquewhite;
+
+}
+#consultaHtitulo{
+    font-size: 35px;
+    font-weight: bolder;
+    font-family: 'Arial-Black';
+    font-style: oblique;
+    color: darkred;
+   text-align: center;
+    top: 45%; /* posiciona na metade da tela */
+    margin-top: -100px; /* e retrocede metade da altura */
+}
+
+td{
+    border-collapse: collapse;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    
+}
+#hospedes_table{
+    border-collapse: collapse;
+    border: 1px;
+    border-color:darkred;
+    border-style: solid;
+    margin-right:auto; margin-left:auto;
+    margin-top: 5%;
+    margin-bottom: 2%; 
+}
+th{
+    border-collapse: collapse;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    margin-right:auto; margin-left:auto;
+    color: darkblue;
+
+}
+    
+tr{
+    border-collapse: collapse;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    color: red;
+}
+
+#cadastroF{
+    
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align:center;
+    color: black;
+    font-weight: bolder;
+    position:absolute ;
+    top: 50%; /* posiciona na metade da tela */
+    margin-top: -100px; /* e retrocede metade da altura */
+    padding: 10px;
+    padding: 2px 4px 6px 8px;
+    background-image: url(images/cadH.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: center;
+    background-color: antiquewhite;
+}
+
+#consultaF{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align:center;
+    color: black;
+    font-weight: bolder;
+    position:absolute ;
+    top: 40%; /* posiciona na metade da tela */
+    margin-top: -100px; /* e retrocede metade da altura */
+    padding: 10px;
+    padding: 2px 4px 6px 8px;
+    background-image: url(images/cadH.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: center;
+    background-color: antiquewhite;
+}
+
+#func_table{
+    border-collapse: collapse;
+    border: 1px;
+    border-color:darkred;
+    border-style: solid;
+    margin-right:auto; margin-left:auto;
+    margin-top: 5%;
+    margin-bottom: 2%; }
+
+    #consultaFtitulo{
+        font-size: 35px;
+        font-weight: bolder;
+        font-family: 'Arial-Black';
+        font-style: oblique;
+        color: darkred;
+       text-align: center;
+        top: 45%; /* posiciona na metade da tela */
+        margin-top: -100px; /* e retrocede metade da altura */
+
+    }
